@@ -1,0 +1,331 @@
+.scalexpert {
+    font-family: Arial, Verdana, Helvetica;
+    font-size: 14px
+}
+
+.scalexpert button {
+    background: 0 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer
+}
+
+.scalexpert-bold {
+    font-weight: 700
+}
+
+.scalexpert-highlight {
+    color: #e2010b;
+    font-weight: 700
+}
+
+.scalexpertjs-solution, .scalexpertjs-solution[data-display=false] {
+    display: none
+}
+
+.scalexpertjs-solution[data-display=true] {
+    display: block
+}
+
+.scalexpertjs-solution:first-child[data-display=false] {
+    display: none
+}
+
+.scalexpertjs-solution:first-child, .scalexpertjs-solution:first-child[data-display=true] {
+    display: block
+}
+
+.scalexpert_subtitle {
+    text-transform: uppercase
+}
+
+.scalexpert-modal-mainContent .scalexpert_subtitle {
+    font-weight: 700
+}
+
+.scalexpert_important {
+    font-weight: 700;
+    font-size: 15px
+}
+
+.scalexpert-solution {
+    border: 1px solid #666;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem
+}
+
+.scalexpert-solution-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    min-height: 24px
+}
+
+.scalexpert-solution-information {
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.scalexpert-solution-logo {
+    margin-left: auto
+}
+
+.scalexpert-solution-shortDescriptionLegal {
+    color: #545454;
+    font-size: 12px
+}
+
+.scalexpert-solution-shortDescriptionLegal .scalexpert_important {
+    font-size: 12px
+}
+
+.scalexpert-list {
+    margin-bottom: 4px
+}
+
+.scalexpert-list-content {
+    display: flex;
+    margin: 0 4px 0 0;
+    padding: 0;
+    flex-wrap: wrap
+}
+
+.scalexpert-list-infoShortDetailPayment {
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+.scalexpert-installments-content {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e6e6e6;
+    color: #666
+}
+
+.scalexpert-installments-item {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.scalexpert-installments-item:first-child {
+    font-weight: 700;
+    border-bottom-color: #666
+}
+
+.scalexpert-installments-mentions {
+    margin-top: 1rem;
+    color: #666
+}
+
+.scalexpert-installments-mention {
+    display: inline-block
+}
+
+button.scalexpert-list-item {
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 14px;
+    margin: 0 4px 4px 0;
+    background-color: #fff
+}
+
+button.scalexpert-list-item[data-current=true] {
+    background: #e2010b;
+    border-color: #e2010b;
+    color: #fff;
+    cursor: default
+}
+
+.scalexpert-modal {
+    font-family: Arial, Verdana, Helvetica;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    left: 0;
+    top: 0
+}
+
+.scalexpert-modal[data-display=true] {
+    display: block
+}
+
+.scalexpert-modal-header {
+    margin-bottom: 2rem
+}
+
+.scalexpert-modal-header:after, .scalexpert-modal-header:before {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.scalexpert-modal-title {
+    float: left;
+    width: calc(100% - 24px);
+    color: #010035;
+    font-size: 21px;
+    font-weight: 700
+}
+
+.scalexpert-modal-close {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: 0 0;
+    float: right;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    font-size: 0;
+    color: transparent;
+    mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzI5cHQiIHZpZXdCb3g9IjAgMCAzMjkuMjY5MzMgMzI5IiB3aWR0aD0iMzI5cHQiPjxwYXRoIGQ9Im0xOTQuODAwNzgxIDE2NC43Njk1MzEgMTI4LjIxMDkzOC0xMjguMjE0ODQzYzguMzQzNzUtOC4zMzk4NDQgOC4zNDM3NS0yMS44MjQyMTkgMC0zMC4xNjQwNjMtOC4zMzk4NDQtOC4zMzk4NDQtMjEuODI0MjE5LTguMzM5ODQ0LTMwLjE2NDA2MyAwbC0xMjguMjE0ODQ0IDEyOC4yMTQ4NDQtMTI4LjIxMDkzNy0xMjguMjE0ODQ0Yy04LjM0Mzc1LTguMzM5ODQ0LTIxLjgyNDIxOS04LjMzOTg0NC0zMC4xNjQwNjMgMC04LjM0Mzc1IDguMzM5ODQ0LTguMzQzNzUgMjEuODI0MjE5IDAgMzAuMTY0MDYzbDEyOC4yMTA5MzggMTI4LjIxNDg0My0xMjguMjEwOTM4IDEyOC4yMTQ4NDRjLTguMzQzNzUgOC4zMzk4NDQtOC4zNDM3NSAyMS44MjQyMTkgMCAzMC4xNjQwNjMgNC4xNTYyNSA0LjE2MDE1NiA5LjYyMTA5NCA2LjI1IDE1LjA4MjAzMiA2LjI1IDUuNDYwOTM3IDAgMTAuOTIxODc1LTIuMDg5ODQ0IDE1LjA4MjAzMS02LjI1bDEyOC4yMTA5MzctMTI4LjIxNDg0NCAxMjguMjE0ODQ0IDEyOC4yMTQ4NDRjNC4xNjAxNTYgNC4xNjAxNTYgOS42MjEwOTQgNi4yNSAxNS4wODIwMzIgNi4yNSA1LjQ2MDkzNyAwIDEwLjkyMTg3NC0yLjA4OTg0NCAxNS4wODIwMzEtNi4yNSA4LjM0Mzc1LTguMzM5ODQ0IDguMzQzNzUtMjEuODI0MjE5IDAtMzAuMTY0MDYzem0wIDAiLz48L3N2Zz4) no-repeat center center;
+    mask-size: 12px 12px;
+    background-color: #e2010b
+}
+
+.scalexpert-modal-solution {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: .7rem
+}
+
+.scalexpert-modal-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.scalexpert-modal-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #000;
+    opacity: .5
+}
+
+.scalexpert-modal-mainContent {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse
+}
+
+.scalexpert-modal-mainContent-left {
+    width: 100%;
+    margin-right: 48px
+}
+
+.scalexpert-modal-mainContent-left > p {
+    margin-top: 0
+}
+
+.scalexpert-modal-mainContent-left ol {
+    list-style: none;
+    counter-reset: i;
+    padding: 0;
+    margin: 0
+}
+
+.scalexpert-modal-mainContent-left ol > li {
+    position: relative;
+    counter-increment: i;
+    padding-left: 40px;
+    line-height: 24px;
+    margin-top: 24px
+}
+
+.scalexpert-modal-mainContent-left ol > li:before {
+    content: counter(i);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background: #e2010b;
+    border-radius: 50%
+}
+
+.scalexpert-modal-mainContent-right {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 1rem
+}
+
+.scalexpert-modal-mainContent-right-content {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 12px 16px
+}
+
+.scalexpert-modal-mainContent-right-content ul {
+    padding: 0
+}
+
+.scalexpert-modal-mainContent-right-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 8px;
+    min-height: 24px
+}
+
+@media (min-width: 800px) {
+    .scalexpert-modal-solution {
+        margin: 1rem
+    }
+
+    .scalexpert-modal-content {
+        max-width: 872px
+    }
+
+    .scalexpert-modal-mainContent {
+        flex-wrap: initial;
+        flex-direction: initial
+    }
+
+    .scalexpert-modal-mainContent-left {
+        min-width: calc(100% - 425px);
+        max-width: 385px
+    }
+
+    .scalexpert-modal-mainContent-right {
+        width: 375px;
+        min-width: 375px;
+        margin-bottom: 0
+    }
+}

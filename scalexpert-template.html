@@ -1,0 +1,162 @@
+<!--
+ * Copyright © Scalexpert.
+ * This file is part of Scalexpert
+ *
+ * @author    Société Générale
+ * @copyright Scalexpert
+ * @license   https://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+-->
+
+<script src="./snippet/scalexpert.js?v=0.1.2"></script>
+<link rel="stylesheet" href="./snippet/scalexpert.css?v=0.1.2">
+
+<template id="scalexpert">
+    <div data-scalexpertjs="content"></div>
+</template>
+
+<template id="scalexpert-solution">
+    <div class="scalexpert-solution scalexpertjs-solution"
+         data-scalexpertjs="solutionid"
+         aria-hidden="true"
+         data-display="false"
+    >
+        <div class="scalexpert-solution-top">
+            <span data-scalexpertjs="title"></span>
+            <button
+                class="scalexpert-solution-information"
+                data-scalexpertjs="buttonModal"
+                data-modal="openModal"
+                data-idmodal=""
+                aria-role="button"
+                aria-label=""
+            >
+                <img class="scalexpert-solution-informationicon"
+                     data-scalexpertjs="icon"
+                     src=""
+                     alt="Information"
+                     width="16"
+                     height="16"
+                >
+            </button>
+            <img class="scalexpert-solution-logo"
+                 data-scalexpertjs="logo"
+                 src=""
+                 alt=""
+            >
+        </div>
+
+        <div data-scalexpertjs="content"></div>
+
+        <div class="scalexpert-solution-shortDescriptionLegal"
+             data-scalexpertjs="shortDescriptionLegal"
+        >
+        </div>
+    </div>
+</template>
+
+<template id="scalexpert-list">
+    <div class="scalexpert-list">
+        <nav class="scalexpert-list-content"
+            data-scalexpertjs="content"
+        ></nav>
+        <div data-scalexpertjs="infoShortDetailPayment"></div>
+    </div>
+</template>
+
+<template id="scalexpert-list-item">
+    <button class="scalexpert-list-item"
+        data-scalexpertjs="item"
+        data-current="false"
+        data-id=""
+        aria-role="button"
+        aria-label=""
+    ></button>
+</template>
+
+<template id="scalexpert-modal">
+    <div id=""
+         class="scalexpert-modal"
+         data-scalexpertjs="solutiongroupid"
+         data-display="false"
+         data-modal
+         role="dialog"
+         aria-modal="true"
+         aria-label=""
+         tabindex="-1"
+    >
+        <div class="scalexpert-modal-content"
+             role="document"
+        >
+            <div data-scalexpertjs="content"></div>
+        </div>
+        <div class="scalexpert-modal-overlay"
+             data-scalexpertjs="modaloverlay"
+        ></div>
+    </div>
+</template>
+
+<template id="scalexpert-modal-solution">
+    <div class="scalexpert-modal-solution scalexpertjs-solution"
+         data-scalexpertjs="solutionid"
+         aria-hidden="true"
+         data-display="false"
+    >
+        <div class="scalexpert-modal-header">
+            <div class="scalexpert-modal-title"
+                 data-scalexpertjs="title"
+            ></div>
+            <button type="button"
+                    class="scalexpert-modal-close"
+                    aria-label="Fermer"
+                    data-scalexpertjs="close"
+                    aria-role="button"
+            >
+                    X
+            </button>
+        </div>
+        <div class="scalexpert-modal-body">
+            <div class="scalexpert-modal-mainContent">
+                <div class="scalexpert-modal-mainContent-left"
+                     data-scalexpertjs="additionalInformation"
+                ></div>
+
+                <div class="scalexpert-modal-mainContent-right">
+                    <div class="scalexpert-modal-mainContent-right-content">
+                        <div class="scalexpert-modal-mainContent-right-top">
+                            Simulez votre paiement
+
+                            <img class=""
+                                 data-scalexpertjs="logo"
+                                 src=""
+                                 alt=""
+                            >
+                        </div>
+
+                        <div data-scalexpertjs="content"></div>
+                        <div data-scalexpertjs="infoLongDetailPayment"></div>
+                        <div class="scalexpert-installments-content"
+                             data-scalexpertjs="installments"
+                        ></div>
+                        <div class="scalexpert-installments-mentions"
+                             data-scalexpertjs="mentions"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-scalexpertjs="legalText"></div>
+        </div>
+    </div>
+</template>
+
+<template id="scalexpert-installments-item">
+    <div class="scalexpert-installments-item"
+         data-scalexpertjs="item"
+    ></div>
+</template>
+
+<template id="scalexpert-installments-mention">
+    <span class="scalexpert-installments-mention"
+         data-scalexpertjs="item"
+    ></span>
+</template>
